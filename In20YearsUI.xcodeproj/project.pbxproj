@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1825106519C6A9B300C9CF46 /* DRNRealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825106219C6A9B300C9CF46 /* DRNRealTimeBlurView.m */; };
+		1825106619C6A9B300C9CF46 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825106419C6A9B300C9CF46 /* UIImage+BoxBlur.m */; };
+		182963C719C7BE4600A3EE54 /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182963C419C7BE4600A3EE54 /* ASPopUpView.m */; };
+		182963C819C7BE4600A3EE54 /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182963C619C7BE4600A3EE54 /* ASProgressPopUpView.m */; };
+		18701CAD19C7299A00AB9714 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18701CAC19C7299A00AB9714 /* ShareViewController.m */; };
 		18B7CCDD19C1E57800DF9553 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B7CCDC19C1E57800DF9553 /* Foundation.framework */; };
 		18B7CCDF19C1E57800DF9553 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B7CCDE19C1E57800DF9553 /* CoreGraphics.framework */; };
 		18B7CCE119C1E57800DF9553 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B7CCE019C1E57800DF9553 /* UIKit.framework */; };
@@ -113,6 +118,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1825106119C6A9B300C9CF46 /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
+		1825106219C6A9B300C9CF46 /* DRNRealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRNRealTimeBlurView.m; sourceTree = "<group>"; };
+		1825106319C6A9B300C9CF46 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		1825106419C6A9B300C9CF46 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+		182963C319C7BE4600A3EE54 /* ASPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPopUpView.h; sourceTree = "<group>"; };
+		182963C419C7BE4600A3EE54 /* ASPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPopUpView.m; sourceTree = "<group>"; };
+		182963C519C7BE4600A3EE54 /* ASProgressPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProgressPopUpView.h; sourceTree = "<group>"; };
+		182963C619C7BE4600A3EE54 /* ASProgressPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASProgressPopUpView.m; sourceTree = "<group>"; };
+		18701CAB19C7299A00AB9714 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareViewController.h; path = In20YearsUI/ShareViewController.h; sourceTree = SOURCE_ROOT; };
+		18701CAC19C7299A00AB9714 /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShareViewController.m; path = In20YearsUI/ShareViewController.m; sourceTree = SOURCE_ROOT; };
 		18B7CCD919C1E57800DF9553 /* In20YearsUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = In20YearsUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B7CCDC19C1E57800DF9553 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18B7CCDE19C1E57800DF9553 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -247,6 +262,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1825106019C6A93500C9CF46 /* DRNRealTimeBlur */ = {
+			isa = PBXGroup;
+			children = (
+				1825106119C6A9B300C9CF46 /* DRNRealTimeBlurView.h */,
+				1825106219C6A9B300C9CF46 /* DRNRealTimeBlurView.m */,
+				1825106319C6A9B300C9CF46 /* UIImage+BoxBlur.h */,
+				1825106419C6A9B300C9CF46 /* UIImage+BoxBlur.m */,
+			);
+			name = DRNRealTimeBlur;
+			sourceTree = "<group>";
+		};
+		182963C219C7BE2200A3EE54 /* ASProgressPopUpView */ = {
+			isa = PBXGroup;
+			children = (
+				182963C319C7BE4600A3EE54 /* ASPopUpView.h */,
+				182963C419C7BE4600A3EE54 /* ASPopUpView.m */,
+				182963C519C7BE4600A3EE54 /* ASProgressPopUpView.h */,
+				182963C619C7BE4600A3EE54 /* ASProgressPopUpView.m */,
+			);
+			name = ASProgressPopUpView;
+			sourceTree = "<group>";
+		};
 		18B7CCD019C1E57800DF9553 = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +317,7 @@
 		18B7CCE219C1E57800DF9553 /* In20YearsUi */ = {
 			isa = PBXGroup;
 			children = (
+				182963C219C7BE2200A3EE54 /* ASProgressPopUpView */,
 				18BC8DEA19C59B8400AF15B4 /* images */,
 				18B7CD1119C1E58300DF9553 /* CommonLibrary */,
 				18B7CCEB19C1E57800DF9553 /* AppDelegate.h */,
@@ -291,6 +329,8 @@
 				18B7CCE319C1E57800DF9553 /* Supporting Files */,
 				18BC8DC719C56BF200AF15B4 /* ProcessViewController.h */,
 				18BC8DC819C56BF200AF15B4 /* ProcessViewController.m */,
+				18701CAB19C7299A00AB9714 /* ShareViewController.h */,
+				18701CAC19C7299A00AB9714 /* ShareViewController.m */,
 			);
 			path = In20YearsUi;
 			sourceTree = "<group>";
@@ -327,6 +367,7 @@
 		18B7CD1119C1E58300DF9553 /* CommonLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				1825106019C6A93500C9CF46 /* DRNRealTimeBlur */,
 				18BC8DE619C59A1100AF15B4 /* LXActivity */,
 				18BC8DE219C5884A00AF15B4 /* Singleton */,
 				18BC8DDD19C587AF00AF15B4 /* IOSDeviceSetting */,
@@ -621,13 +662,18 @@
 				18B7CD1519C1E76F00DF9553 /* CommonBaseViewController.m in Sources */,
 				18B7CCF319C1E57800DF9553 /* ViewController.m in Sources */,
 				18BC8DD819C5854E00AF15B4 /* UIButton+Common.m in Sources */,
+				182963C719C7BE4600A3EE54 /* ASPopUpView.m in Sources */,
+				18701CAD19C7299A00AB9714 /* ShareViewController.m in Sources */,
 				18B7CCED19C1E57800DF9553 /* AppDelegate.m in Sources */,
 				18BC8DDC19C5875100AF15B4 /* UIColor+MLPFlatColors.m in Sources */,
+				182963C819C7BE4600A3EE54 /* ASProgressPopUpView.m in Sources */,
 				18BC8DE119C5880E00AF15B4 /* IOSDeviceConfig.m in Sources */,
 				18B7CCE919C1E57800DF9553 /* main.m in Sources */,
 				18BC8DD919C5854E00AF15B4 /* UIView+CustomAutoLayout.m in Sources */,
+				1825106619C6A9B300C9CF46 /* UIImage+BoxBlur.m in Sources */,
 				18BC8DC919C56BF200AF15B4 /* ProcessViewController.m in Sources */,
 				18BC8DE519C5886200AF15B4 /* Singleton.m in Sources */,
+				1825106519C6A9B300C9CF46 /* DRNRealTimeBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

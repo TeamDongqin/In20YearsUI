@@ -10,29 +10,29 @@
 	<string>In20YearsUi</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C3D2B141-058D-4551-B120-0ADA3D71600D</key>
+		<key>E1CCD0A39C7DF2F5762B9E1E73198E1BE8F36907</key>
 		<string>https://github.com/TeamDongqin/In20YearsUI.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>In20YearsUi/In20YearsUi.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C3D2B141-058D-4551-B120-0ADA3D71600D</key>
+		<key>E1CCD0A39C7DF2F5762B9E1E73198E1BE8F36907</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/TeamDongqin/In20YearsUI.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C3D2B141-058D-4551-B120-0ADA3D71600D</string>
+	<string>E1CCD0A39C7DF2F5762B9E1E73198E1BE8F36907</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C3D2B141-058D-4551-B120-0ADA3D71600D</string>
+			<string>E1CCD0A39C7DF2F5762B9E1E73198E1BE8F36907</string>
 			<key>IDESourceControlWCCName</key>
 			<string>In20YearsUI</string>
 		</dict>
