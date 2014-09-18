@@ -98,6 +98,7 @@
     picker.delegate = self;
     //设置选择后的图片可被编辑
     picker.allowsEditing = YES;
+    picker.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentModalViewController:picker animated:YES];
     //[picker release];
 }
@@ -119,16 +120,20 @@
 -(void)imagePickerController:(UIImagePickerController*)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 
 {
+    NSLog(@"您选择了图片");
+    //关闭相册界面
+    [picker dismissModalViewControllerAnimated:YES];
+    
     /*添加处理选中图像代码*/
     NSString *type = [info objectForKey:UIImagePickerControllerMediaType];
     
     //当选择的类型是图片
     if ([type isEqualToString:@"public.image"])
     {
+        NSLog(@"开始把图片转成NSData");
         //先把图片转成NSData
-        UIImage* image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
-        NSLog(@"您选择了图片");
-        NSData *data;
+        
+        /*NSData *data;
         if (UIImagePNGRepresentation(image) == nil)
         {
             data = UIImageJPEGRepresentation(image, 1.0);
@@ -139,6 +144,7 @@
         }
         
         
+        NSLog(@"开始把图片存到沙盒");
         //图片保存的路径
         //这里将图片放在沙盒的documents文件夹中
         NSString * DocumentsPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
@@ -151,15 +157,17 @@
         [fileManager createDirectoryAtPath:DocumentsPath withIntermediateDirectories:YES attributes:nil error:nil];
         [fileManager createFileAtPath:[DocumentsPath stringByAppendingString:@"/image.png"] contents:data attributes:nil];
         
+        NSLog(@"开始读取图片路径");
+        
         //得到选择后沙盒中图片的完整路径
         filePath = [[NSString alloc]initWithFormat:@"%@%@",DocumentsPath,  @"/image.png"];
-        
-        //关闭相册界面
-        [picker dismissModalViewControllerAnimated:YES];
+        */
         
         ProcessViewController *processViewController = [[ProcessViewController alloc] init];
-        processViewController.filePath = filePath;
+        //processViewController.filePath = filePath;
+        processViewController.contentImage = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
         
+        NSLog(@"开始跳转到ProgressViewController");
         [self.navigationController pushViewController:processViewController animated:YES];
 
     }

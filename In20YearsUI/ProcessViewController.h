@@ -13,7 +13,8 @@
 }
     //图片2进制路径
     @property (strong, nonatomic) NSString* filePath;
-    @property (strong, nonatomic) UIImageView* contentImage;
+    @property (strong, nonatomic) UIImageView* contentImageView;
+    @property (strong, nonatomic) UIImage* contentImage;
     @property (strong, nonatomic) UIButton* processBtn;
 
 
