@@ -27,7 +27,7 @@
     UIButton *uploadBtn = [[UIButton alloc] initWithFrame:uploadBtnframe];
     //uploadBtn.backgroundColor = [UIColor whiteColor];
     //[uploadBtn setTitle:@"上传" forState:UIControlStateNormal];
-    [uploadBtn setBackgroundImage:[UIImage imageNamed:@"camera.png"] forState:UIControlStateNormal];
+    [uploadBtn setBackgroundImage:[UIImage imageNamed:@"Camera.png"] forState:UIControlStateNormal];
     [uploadBtn addTarget:self action:@selector(openMenu) forControlEvents:UIControlEventTouchUpInside];
     //uploadBtn.frame = uploadBtnframe;
     [self.view addSubview:uploadBtn];
